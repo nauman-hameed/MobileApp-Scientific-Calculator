@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#000000">
+
+    <!-- Display Screen -->
+    <TextView
+        android:id="@+id/tvInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:text="0" />
+
+    <!-- Buttons Grid -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="7"
+        android:layout_marginTop="8dp">
+
+        <!-- Row 1: Scientific Functions -->
+        <Button android:id="@+id/btnSin" android:text="sin" style="@style/CalcButton" />
+        <Button android:id="@+id/btnCos" android:text="cos" style="@style/CalcButton" />
+        <Button android:id="@+id/btnTan" android:text="tan" style="@style/CalcButton" />
+        <Button android:id="@+id/btnLog" android:text="log" style="@style/CalcButton" />
+
+        <!-- Row 2: More Sci Ops -->
+        <Button android:id="@+id/btnLn" android:text="ln" style="@style/CalcButton" />
+        <Button android:id="@+id/btnSqrt" android:text="√" style="@style/CalcButton" />
+        <Button android:id="@+id/btnPow" android:text="xʸ" style="@style/CalcButton" />
+        <Button android:id="@+id/btnFact" android:text="x!" style="@style/CalcButton" />
+
+        <!-- Row 3: AC and Basic Ops -->
+        <Button android:id="@+id/btnClear" android:text="AC" style="@style/CalcButton" />
+        <Button android:id="@+id/btnDiv" android:text="÷" style="@style/CalcButton" />
+        <Button android:id="@+id/btnMul" android:text="×" style="@style/CalcButton" />
+        <Button android:id="@+id/btnSub" android:text="−" style="@style/CalcButton" />
+
+        <!-- Row 4: Numbers 7–9 and + -->
+        <Button android:id="@+id/btn7" android:text="7" style="@style/CalcButton" />
+        <Button android:id="@+id/btn8" android:text="8" style="@style/CalcButton" />
+        <Button android:id="@+id/btn9" android:text="9" style="@style/CalcButton" />
+        <Button android:id="@+id/btnAdd" android:text="+" style="@style/CalcButton" />
+
+        <!-- Row 5: Numbers 4–6 -->
+        <Button android:id="@+id/btn4" android:text="4" style="@style/CalcButton" />
+        <Button android:id="@+id/btn5" android:text="5" style="@style/CalcButton" />
+        <Button android:id="@+id/btn6" android:text="6" style="@style/CalcButton" />
+        <Button android:id="@+id/btnEqual" android:text="=" style="@style/CalcButton" />
+
+        <!-- Row 6: Numbers 1–3 -->
+        <Button android:id="@+id/btn1" android:text="1" style="@style/CalcButton" />
+        <Button android:id="@+id/btn2" android:text="2" style="@style/CalcButton" />
+        <Button android:id="@+id/btn3" android:text="3" style="@style/CalcButton" />
+        <Button android:id="@+id/btnDot" android:text="." style="@style/CalcButton" />
+
+        <!-- Row 7: 0 -->
+        <Button android:id="@+id/btn0" android:text="0" style="@style/CalcButton"
+            android:layout_columnSpan="4"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:textSize="20sp" />
+    </GridLayout>
+</LinearLayout>
