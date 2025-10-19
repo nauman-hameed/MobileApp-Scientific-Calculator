@@ -31,3 +31,19 @@ IDE: Android Studio
 Minimum SDK: 24 (Android 7.0)
 UI Layout: XML
 Architecture: Simple MVC**
+
+**🧰 Folder Structure**
+app/
+ ├── manifests/              # AndroidManifest.xml
+ ├── java/                   # Kotlin source code (MainActivity, logic)
+ ├── res/
+ │   ├── layout/             # XML layout files (activity_main.xml)
+ │   ├── values/             # colors.xml, strings.xml, themes.xml
+ │   └── drawable/           # app icons and assets
+ └── build.gradle
+
+**🚨 Error Handling**
+
+Displays “Invalid Input” for malformed expressions.
+Division by zero shows a friendly “Cannot divide by zero” message.
+Prevents crashes with input validation.
